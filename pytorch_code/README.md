@@ -1,5 +1,7 @@
 # Code for Questions 2 and 3
 
+The code for Questions 2 and 3 is heavily based on the PyTorch [robustness library](https://github.com/MadryLab/robustness) and the PyTorch [codebase for the ICML 2019 paper "Exploring the Landscape of Spatial Robustness"](https://github.com/MadryLab/spatial-pytorch).
+
 ## Preparing the datasets
 
 Download the datasets from [this link](https://github.com/MadryLab/constructed-datasets).
