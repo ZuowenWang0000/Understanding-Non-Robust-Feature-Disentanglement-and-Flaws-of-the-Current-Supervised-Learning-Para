@@ -1,8 +1,7 @@
 # Training and Attack Success Rate Evaluation
 
 This repository contains code to train and evaluate models against
-several adversarial attacks including spatial attack and linf-PGD attack. It can be used to reproduce the
-main experiments of:
+several adversarial attacks including spatial attack and linf-PGD attack. 
 
 The code is based on https://github.com/MadryLab/adversarial_spatial. 
 
@@ -16,8 +15,6 @@ CIFAR-10, CIFAR-100, SVHN, imageNet
 **Supported architectures:**
 
 Resnet-8, 18, 34 (in file resnet.py) & Resnet-50 (in file resnet50.py)
-
-
 
 Different training options are included in the folder `train_configs`
 A template is annotated below. Please keep the default values if not mentioned in the comment.
