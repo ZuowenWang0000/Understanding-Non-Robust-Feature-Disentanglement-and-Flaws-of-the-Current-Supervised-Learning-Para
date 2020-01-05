@@ -2,6 +2,10 @@
 
 The code for Questions 2 and 3 is heavily based on the PyTorch [robustness library](https://github.com/MadryLab/robustness) and the PyTorch [codebase for the ICML 2019 paper "Exploring the Landscape of Spatial Robustness"](https://github.com/MadryLab/spatial-pytorch).
 
+Running the code will require installing several Python modules, most of which can be installed through `pip`. There is one module which must be installed manually (the version from `pip` does not have PyTorch support): [GrouPy](https://github.com/adambielski/GrouPy) must be downloaded and then installed via `python3 setup.py install`.
+
+The other modules which can be installed from `pip` are: `torch`, `torchvision`, `pickle`, `dill`, `cox`, and `tensorboardX` (this list is not exhaustive). If you receive a runtime error about missing modules, simply install the offending module from `pip`.
+
 ## Preparing the datasets
 
 Download the datasets from [this link](https://github.com/MadryLab/constructed-datasets).
