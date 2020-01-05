@@ -13,12 +13,11 @@ evaluate a model respectively.
 CIFAR-10, CIFAR-100, SVHN, imageNet
 
 **Supported architectures:**
-
-Resnet-8, 18, 34 (in file resnet.py) & Resnet-50 (in file resnet50.py)
+Resnet-8, 18, 34 (in file `resnet.py`) & Resnet-50 (in file `resnet50.py`)
 
 Different training options are included in the folder `train_configs`
 A template is annotated below. Please keep the default values if not mentioned in the comment.
-Some the parameters are irrelevant for our experiments in this work.
+Some of the parameters are irrelevant for our experiments in this work.
 
 ```
 {
@@ -119,8 +118,8 @@ Some the parameters are irrelevant for our experiments in this work.
 ```
 
 ### Training 
-For training models and saving multiple checkpoints for evaluation, you can run the train_std_asr.sh
-or train_std_star_asr.sh scripts in ./scripts folder. Or run the train_asr.py script with parameters passed 
+For training models and saving multiple checkpoints for evaluation, you can run the `train_std_asr.sh`
+or `train_std_star_asr.sh` scripts in `./scripts` folder. Or run the `train_asr.py` script with parameters passed 
  
 ```
  python3 ../train_asr.py \
@@ -137,7 +136,7 @@ or train_std_star_asr.sh scripts in ./scripts folder. Or run the train_asr.py sc
 ```
 
 ### Evaluation
-If you want to solely evaluate a trained model, you can use the eval.py script.
+If you want to solely evaluate a trained model, you can use the `eval.py` script.
 
 ```
 python3 ../eval.py \
