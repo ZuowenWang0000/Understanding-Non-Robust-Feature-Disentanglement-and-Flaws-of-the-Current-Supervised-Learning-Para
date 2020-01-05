@@ -150,8 +150,4 @@ python3 ../eval.py \
 ```
 
 
-# References
-[1] Harini Kannan, Alexey Kurakin, and Ian Goodfellow. Adversarial Logit Pairing. arXiv preprint
-arXiv:1803.06373, 2018.
-
 
