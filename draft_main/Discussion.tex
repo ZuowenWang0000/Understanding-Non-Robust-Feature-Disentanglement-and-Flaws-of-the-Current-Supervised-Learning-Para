@@ -1,0 +1,11 @@
+\section {Discussion}
+% Discuss the strengths and weaknesses of your
+% approach, based on the results. Point out the implications of your novel idea on the application
+% concerned.
+
+% strength
+Our work reexamined several ideas proposed in \cite{Ilyas2019} under a novel perspective. We try to verify the claimed drawback of the current supervised learning paradigm with a quantitative approach by snapshotting the evolution of the training procedure and measuring ASRs for various attacks. The results we get for Question \ref{q1} show a general trend, but fail to further disentangle the effects of robust and non-robust features on the training process. More experimental designs and a finer-grained control over the training procedure are needed for further study.
+
+Furthermore, we proposed a new approach of constructing a training dataset by mixing natural and robust datasets, which can boost robust accuracy greatly almost without sacrificing natural accuracy. Although it could be considered ``robustness for free'', and it transfers well across attacks under the same class as well as different architectures, the robust accuracy obtained is still below that obtained through state-of-the-art defenses.
+
+Finally, we empirically disproved the possibility that spatial vulnerabilities are caused by PGD-non-robust features, but the reason behind such attacks still remains unknown to us and is out of the scope of this study.

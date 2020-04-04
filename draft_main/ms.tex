@@ -1,0 +1,96 @@
+\documentclass[a4paper,twocolumn,10pt]{article}
+\usepackage{hyperref}       % hyperlinks
+\usepackage{usenix}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\setlength{\marginparwidth }{1.5cm}
+\usepackage[colorinlistoftodos]{todonotes}
+% \usepackage{hyperref}       % hyperlinks
+\usepackage{breakurl}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage[font={footnotesize, it}, skip=-12pt]{caption}
+\usepackage{chngpage}
+
+
+\usepackage{appendix}
+\usepackage{svg}
+
+\newcounter{qcounter}
+\setcounter{qcounter}{0}
+
+
+\title{Understanding (Non-)Robust Feature Disentanglement and the Relationship Between Low- and High-Dimensional Adversarial Attacks}
+
+
+\author{
+  % \vspace{-30pt} \\
+  \rm{Zuowen Wang, Leo Horne}\\
+  \normalfont\texttt{\{wangzu, hornel\}@ethz.ch} \\
+}
+
+\begin{document}
+\setstretch{1.0}
+\maketitle
+
+\input{definitions.tex}
+
+\begin{abstract}
+% Recent work has put forth the hypothesis that adversarial vulnerabilities in neural networks are due to them overusing "non-robust features" inherent in the training data. We show empirically that for PGD-attacks, there is a training stage where neural networks start heavily relying on non-robust features to boost natural accuracy. We also propose a mechanism reducing vulnerability to PGD-style attacks consisting of mixing in a certain amount of images containing mostly "robust features" into each training batch, and then show that robust accuracy is improved, while natural accuracy is not substantially hurt. We show that training on "robust features" provides boosts in robust accuracy across various architectures and for different attacks. Finally, we demonstrate empirically that these "robust features" do not induce spatial invariance.
+
+Recent work has put forth the hypothesis that adversarial vulnerabilities in neural networks are due to them overusing ``non-robust features'' inherent in the training data. We show empirically that for PGD-attacks, there is a training stage where neural networks start heavily relying on non-robust features to boost natural accuracy. We also propose a mechanism reducing vulnerability to PGD-style attacks consisting of mixing in a certain amount of images containing mostly ``robust features'' into each training batch, and then show that robust accuracy is improved, while natural accuracy is not substantially hurt. We show that training on ``robust features'' provides boosts in robust accuracy across various architectures and for different attacks. Finally, we demonstrate empirically that these ``robust features'' do not induce spatial invariance.
+
+\end{abstract}
+
+% \vspace{-10pt}
+
+% \blfootnote{Code is available at: \url{https://github.com/ZuowenWang0000/DL\_Project\_Code\_Submission}}
+
+\input{introduction.tex}
+
+\input{ModelsMethods.tex}
+
+\input{Results.tex}
+
+\input{Discussion.tex} % related work?
+
+\input{Conclusion.tex}
+
+% \newpage
+% \paragraph{}
+% \newpage
+
+
+\bibliography{references}  %%% Remove comment to use the 
+\bibliographystyle{plain}
+% external .bib file (using bibtex).
+%%% and comment out the ``thebibliography'' section.
+
+%%% Comment out this section when you \bibliography{references} is enabled.
+% \begin{thebibliography}{1}
+
+
+% \end{thebibliography}
+
+\newpage
+
+\onecolumn
+
+\section*{\Large{Appendices}}
+
+%%%%%% Appendix
+\begin{appendices}
+\input{appendix.tex}
+\end{appendices}
+\end{document}
+

@@ -1,0 +1,228 @@
+\newcommand{\makepurple}[1]{{\color{purple}{#1}}}
+\newcommand{\makered}[1]{{\color{red}{#1}}}
+\newcommand{\makeblue}[1]{{\color{blue}{#1}}}
+\newcommand{\makegreen}[1]{{\color{green}{#1}}}
+\newcommand{\nmcomment}[1]{\makered{{NM: $\quad$ #1}}}
+
+\newcommand{\newres}[1]{{\color{green}{#1}}}
+\newcommand{\newzw}[1]{{\color{red}{#1}}}
+
+%\newcommand{\newres}[1]{#1}
+
+
+
+%\newcommand{\fycomment}[1]{}
+%\newcommand{\chcomment}[1]{}
+
+
+\newcommand{\fycomment}[1]{\makered{{FY: $\:\:$ #1}}}
+\newcommand{\chcomment}[1]{\makepurple{{CH: #1}}}
+\newcommand{\zwcomment}[1]{\makegreen{{ZW: #1}}}
+
+\newcommand\Christina[1]{\chcomment{#1}}
+\newcommand{\searchset}[1]{S^{#1}}
+\newcommand{\Trans}[1]{L_{#1}}
+\newcommand{\param}{\theta}
+\newcommand{\px}{\textrm{px}}
+\newcommand{\core}{\ensuremath{\text{CoRe}}}
+%\newcommand{\core}{{\sc CoRe}\xspace}
+\newcommand{\EE}{\mathbb{E}\:}
+\newcommand{\ID}{\ensuremath{\text{ID}}}
+\newcommand{\attvec}{\ensuremath{Z}}
+\newcommand{\corepen}{\ensuremath{\phi}}
+\newcommand{\Pert}{\ensuremath{\Delta}}
+\newcommand{\Pertsetorig}{\widetilde{\mathcal{S}}}
+\newcommand{\Pertset}{\mathcal{S}}
+\newcommand{\Trafo}[2]{\mathcal{T}(#1, #2)}
+\newcommand{\XID}[1]{\ensuremath{X^{#1}}}
+\newcommand{\YID}{\ensuremath{Y}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\loss}{\ell}
+\newcommand{\func}{f}
+\newcommand{\cond}{\: | \:}
+\newcommand{\Var}{\text{Var}}
+\newcommand{\numid}{n}
+\newcommand{\reg}{R}
+\newcommand{\Loss}[1]{\mathcal{L}_{#1}}
+\newcommand{\PopLoss}[1]{\Loss{#1}}
+\newcommand{\PopLossReg}[1]{\PopLoss{#1}}
+\newcommand{\EmpLoss}[1]{\widehat{\mathcal{L}}_{#1}}
+\newcommand{\stepsize}{\alpha}
+\newcommand{\adv}{\text{adv}}
+\newcommand{\mixadv}{\text{mix}}
+\newcommand{\Xadv}[2]{X^{\star}_{#2}(\param^{#1})}
+\newcommand{\Xadvce}[2]{X^{\text{ce}}_{#2}(\param^{#1})}
+\newcommand{\Xadvreg}[2]{X^{\Reg}_{#2}(\param^{#1})}
+
+%\newcommand{\argmax}{\ensuremath{\operatorname{argmax}}}
+%\newcommand{\argmin}{\ensuremath{\operatorname{argmin}}}
+% \DeclareMathOperator*{\argmax}{arg\,max}
+% \DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\RN}{\mathbb{R}}
+\newcommand{\batchsize}{b}
+\newcommand{\batch}{B}
+\newcommand{\gradient}{G}
+\newcommand{\groupsize}{\numadv}
+\newcommand{\X}{\mathcal{X}}
+\newcommand{\paramopt}{\param^{\star}}
+\newcommand{\Indi}[1]{\mathbb{I}\{#1\}}
+\newcommand{\prederr}{R}
+\newcommand{\predacc}{A}
+\newcommand{\dimparam}{p}
+\newcommand{\qid}{q}
+\newcommand{\epsadv}{Q}
+\newcommand{\probpert}{P}
+\newcommand{\acronym}{RECOVARIT }
+\newcommand{\acronymmath}{\text{RECOVARIT}}
+\newcommand{\ibatch}{I}
+%% \newcommand{\max}{\ensuremath{\operatorname{max}}}
+%% \newcommand{\min}{\ensuremath{\operatorname{min}}}
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\mutual}[2]{I(#1;#2)}
+\newcommand{\dimid}{m}
+\newcommand{\attstyle}{Z^{\text{style}}}
+\newcommand{\attcore}{Z^{\text{core}}}
+\newcommand{\Pertadv}{\Pert^{\star}}
+\newcommand{\dimpert}{q}
+\newcommand{\numadv}{M}
+\newcommand{\EmpVar}{\widehat{\Var}}
+\newcommand{\EmpEE}{\widehat{\mathbb{E}}}
+\newcommand{\EEt}{\mathbb{E}^t}
+\newcommand{\updateop}{M}
+\newcommand{\full}{\text{100}}
+\newcommand{\half}{\text{50}}
+\newcommand{\mixb}{\half}
+\newcommand{\natb}{\text{0}}
+\newcommand{\advb}{\full}
+\newcommand{\quarter}{\text{(25)}}
+
+\newcommand{\std}{\ensuremath{\text{std}}}
+\newcommand{\stdaug}{\ensuremath{\std^\star}}
+\newcommand{\rnd}{\text{rnd}}
+\newcommand{\recovarit}[3]{\text{#1} (#3) \text{ w/ } #2}
+\newcommand{\at}{\text{Adversarial training}}
+\newcommand{\atabb}{\text{Adv.\ Training}}
+\newcommand{\wokabb}{\text{Wo-$\numwok$}}
+\newcommand{\woabb}[1]{\text{Wo-${#1}$}}
+\newcommand{\wok}{\text{worst-of-$\numwok$}}
+\newcommand{\wo}[1]{\text{worst-of-${#1}$}}
+\newcommand{\wokfull}{\text{Worst-of-$\numwok$ \full}}
+\newcommand{\wofull}[1]{\text{Worst-of-${#1}$ \full}}
+\newcommand{\wokhalf}{\text{Worst-of-$\numwok$ \half}}
+\newcommand{\wohalf}[1]{\text{Worst-of-${#1}$ \half}}
+\newcommand{\numwok}{k}
+\newcommand{\fo}{\text{S-PGD}}
+\newcommand{\fofull}{\fo \text{ \full}}
+\newcommand{\fohalf}{\fo \text{ \half}}
+\newcommand{\fstar}{f^\star}
+\newcommand{\suppmat}{Appendix}
+\newcommand{\defense}{$D$}
+\newcommand{\defvar}{\texttt{def}}
+\newcommand{\dataug}{DA}
+\newcommand{\eps}{\epsilon}
+\newcommand{\paramhat}{\widehat{\param}}
+\newcommand{\numtotal}{N}
+\newcommand{\lossbound}{B}
+\newcommand{\invfuncs}{\mathcal{F}_{\text{inv}}}
+\newcommand{\empinvfuncs}{\mathcal{F}_{\numid, \text{inv}}}
+\newcommand{\dudley}{D(\func, \lossbound)}
+\newcommand{\cover}{N}
+\newcommand{\funcloss}{\mathcal{F}_\ell}
+\newcommand{\funcspace}{\mathcal{F}}
+\newcommand{\paramhatopt}{\paramhat^{\star}}
+\newcommand{\atmix}{\ensuremath{\atabb\:(50)}}
+\newcommand{\atfull}{\ensuremath{\atabb\:(100)}}
+\newcommand{\recovaritmix}{\ensuremath{\acronymmath\:(50)}}
+\newcommand{\recovaritfull}{\ensuremath{\acronymmath\:(100)}}
+\newcommand{\Rade}{\mathcal{R}}
+\newcommand{\E}{\text{e}}
+\newcommand{\paramspace}{\Theta}
+\newcommand{\Group}{\mathbb{G}}
+\newcommand{\defn}{:=}
+\newcommand{\Gorbit}[1]{\Group(#1)}
+\newcommand{\SubGorbit}[1]{G^{#1}}
+\newcommand{\SubGroup}[1]{\Group^{#1}}
+\newcommand{\ZOLoss}[1]{\mathcal{R}_{#1}}
+\newcommand{\xworst}[1]{x^\star({#1})}
+\newcommand{\allorbits}{\mathcal{G}}
+\newcommand{\ortho}{\perp \!\!\! \perp }
+\newcommand{\InvF}{\mathcal{V}}
+\newcommand{\Fspace}{\mathcal{F}}
+\newcommand{\fbest}{f^\star}
+\newcommand{\lip}{\gamma}
+\newcommand{\nat}{\text{nat}}
+\newcommand{\mix}{\text{mix}}
+\newcommand{\fhat}{\hat{f}}
+\newcommand{\Reg}{\ensuremath{R}}
+\newcommand{\fhatt}{\hat{f}'}
+\newcommand{\RegFun}{R_{\monfunc}}
+\newcommand{\monfunc}{h}
+\newcommand{\Pertworst}{\Pert^\star}
+\newcommand{\frob}{f^{\text{rob}}}
+\newcommand{\abest}{a^\star}
+\newcommand{\Pertdiam}{\Pert^{\star}}
+\newcommand{\regfunc}{h}
+\newcommand{\regadvnat}{\tilde{R}}
+\newcommand{\AT}{\text{AT}}
+\newcommand{\ATM}{\text{ATM}}
+\newcommand{\ALP}{\text{ALP}}
+\newcommand{\tr}{\text{KL}}
+\newcommand{\trcce}{\text{KL-C}}
+\newcommand{\ltwo}{\ensuremath{\ell_2}}
+\newcommand{\linf}{\ensuremath{\ell_{\infty}}}
+\newcommand{\alp}{ALP}
+\newcommand{\trades}{\text{TRADES}}
+\newcommand{\orbitset}{\mathbb{G}}
+\newcommand{\KL}{\text{D}_{\text{KL}}}
+\newcommand{\advtype}{\texttt{adv}}
+\newcommand{\stn}{\text{STN}}
+\newcommand{\grn}{\text{GRN}}
+\newcommand{\fnat}{\ensuremath{f^{\text{nat}}}}
+\newcommand{\advex}{\texttt{examples}}
+\newcommand{\batchtype}{\texttt{batch}}
+\newcommand{\advreg}{\texttt{\Reg}}
+\newcommand{\advcce}{\text{ce}}
+\newcommand{\advboth}{\ensuremath{B}}
+\newcommand{\regtype}{\texttt{Reg}\:}
+\newcommand{\cce}{\text{CE}}
+\newcommand{\condind}{\purp}
+\newcommand{\gresnet}{\text{G-ResNet44}}
+\newcommand{\etn}{\text{ETN}}
+\newcommand{\aug}[1]{\ensuremath{{#1}^{\star}}}
+\newcommand{\twostage}{\text{STN+}}
+\newcommand{\ZN}{\mathbb{Z}}
+\newcommand{\Gspace}{\mathcal{I}}
+\newcommand{\SetOrbit}{\mathcal{G}}
+\newcommand{\orbitfunc}{\Psi}
+\newcommand{\SubSetOrbit}{\widetilde{\SetOrbit}}
+\newcommand{\Frob}{F^{\rob}}
+\newcommand{\rob}{\text{rob}}
+\newcommand{\fmin}{f^{\min}}
+\newcommand{\reglosstype}{\texttt{r-loss}}
+\newcommand{\natreg}{\natb}
+\newcommand{\robreg}{\full}
+\newcommand{\robregmix}{\half}
+\newcommand{\Xsupp}{\widetilde{\X}}
+% \theoremstyle{plain}
+
+% \newtheorem{theo}{Theorem}
+% \newtheorem{theonosec}{Theorem}[section]
+% \newtheorem{lem}{Lemma}[section]
+% \newtheorem{prop}{Proposition}
+% \newtheorem{cor}{Corollary}[section]
+% \newtheorem*{obs}{Observation}
+
+% \theoremstyle{definition} 
+
+% \newtheorem{nota}{Notation}[section]
+% \newtheorem{de}{Definition}[section]
+% \newtheorem{exa}{Example}[section]
+% \newtheorem{as}{Assumption}[section]
+% \newtheorem{alg}{Algorithm}[section]
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}

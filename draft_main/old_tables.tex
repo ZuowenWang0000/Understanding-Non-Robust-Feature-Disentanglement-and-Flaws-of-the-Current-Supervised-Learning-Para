@@ -1,0 +1,46 @@
+\begin{table}[htb]
+    \caption{Accuracies achieved from the experiments described in Section. The first row of the table contains natural accuracies, while the remaining rows contain robust accuracies under the attack mentioned in the leftmost column. Each model has four columns of results: ``$D$'' refers to models trained with the natural dataset, while ``$D_R$'' refers to models trained with the robust dataset. The notation $^*$ indicates the model is trained with \texttt{std*} data augmentation} \label{tab:spatialattack_all}
+    \begin{adjustwidth}{-.5in}{-.5in}  
+        \vspace{15pt}
+        \begin{center}
+            \begin{tabular}{|c|cccc|cccc|cccc|c|}
+                \hline
+                & \multicolumn{4}{c|}{ResNet-50} & \multicolumn{4}{c|}{G-ResNet-18} & \multicolumn{4}{c|}{G-ResNet-34} & PTN \\
+                Attack & $D$ & $D_R$ & $D^*$ & $D_R^*$ & $D$ & $D_R$ & $D^*$ & $D_R^*$ & $D$ & $D_R$ & $D^*$ & $D_R^*$ & STN\footnotemark \\ 
+                \hline
+                None &
+                94.84 & 84.75 & 93.9 & 83.53 &  % ResNet-50
+                94.66 & 85.46 & 94.74 & 85.11 &  % G-ResNet
+                \textbf{95.72} & 84.93 & 94.72 & 84.55 &  % STN
+                -- \\
+                \texttt{rot10} &
+                80.97 & 67.78 & 83.24 & 69.67 &  % ResNet-50
+                83.27 & 69.22 & 87.42 & 72.98 &  % G-ResNet
+                83.56 & 68.8 & \textbf{87.61} & 73.34 &  % STN
+                -- \\
+                \texttt{rot30} &
+                36.77 & 24.94 & 58.75 & 42.62 &  % ResNet-50
+                41.74 & 26.95 & 69.86 & 51.97 &  % G-ResNet
+                41.07 & 26.08 & \textbf{75.38} & 46.47 &  % STN
+                -- \\
+                \texttt{grid775,10$^\circ$} &
+                63.34 & 52.3 & 67.78 & 55.31 &  % ResNet-50
+                68.17 & 54.24 & \textbf{75.7} &  % G-ResNet
+                58.96 & 67.98 & 55.15 & \textbf{75.7} & 60.38 &  % STN
+                -- \\
+                \texttt{grid135} &
+                18.72 & 11.23 & 39.71 & 26.89 &  % ResNet
+                21.84 & 11.81 & 52.51 & 36.64 &  % G-ResNet
+                20.99 & 10.99 & \textbf{56.06} & 31.52 &  % STN
+                -- \\
+                \texttt{grid775} &
+                15.28 & 9.88 & 35.42 & 24.53 &  % ResNet
+                19.36 & 10.78 & 49.69 & 34.57  % G-ResNet
+                & 17.82 & 9.89 & \textbf{53.19} & 29.78 &  % STN
+                -- \\
+                \hline
+            \end{tabular}
+        \end{center}
+    \end{adjustwidth}
+    \vspace{-15pt}
+\end{table}

@@ -1,0 +1,819 @@
+@string{it = "IEEE Trans. Info. Theory"}
+@string{icml18 = {Proceedings of the 35th International Conference on Machine Learning}}
+@string{icml19 = {Proceedings of the 36th International Conference on Machine Learning}}
+@string{icml16 = {Proceedings of the 33rd International Conference on Machine Learning}}
+@string{icml = {Proceedings of the International Conference on Machine Learning}}
+
+@string{iclr19 = {Proceedings of the 7th International Conference on Learning Representations}}
+@string{iclr18 = {Proceedings of the 6th International Conference on Learning Representations}}
+
+@string{iclr = {Proceedings of the International Conference on Learning Representations}}
+
+@string{iccv = {Proceedings of the IEEE International Conference on Computer Vision}}
+@string{cvpr = {Proceedings of the IEEE Conference on Computer Vision and Patern Recognition}}
+@string{neurips = {Advances in Neural Information Processing Systems}}
+
+%%%%%%%%%%% citing github repo %%%%%%%%%%%
+@misc{Bielski,
+  author = {Adam Bielski},
+  title = {pytorch-gconv-experiments},
+  year = {2013},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {Online: \url{https://github.com/adambielski/pytorch-gconv-experiments}},
+  commit = {193b391672b50917ead7e63f509a19f651af5e18},
+  note={Accessed 2020-01-05}
+}
+
+
+
+
+%%%%%%%%%%% DL project specific %%%%%%%%%%%
+@misc{pytorchstn,
+    title={Spatial transformer networks tutorial},
+    author={Ghassen Hamrouni},
+    year={2018},
+    howpublished={Online: \url{https://pytorch.org/tutorials/intermediate/spatial_transformer_tutorial.html}},
+    note={Accessed 2020-01-05}
+}
+
+@misc{robustness,
+   title={Robustness ({P}ython {L}ibrary)},
+   author={Logan Engstrom and Andrew Ilyas and Shibani Santurkar and Dimitris Tsipras},
+   year={2019},
+   howpublished={Online: \url{https://github.com/MadryLab/robustness}},
+   note={Accessed 2020-01-05}
+}
+
+@article{engstrom2019a,
+  author = {Engstrom, Logan and Ilyas, Andrew and Madry, Aleksander and Santurkar, Shibani and Tran, Brandon and Tsipras, Dimitris},
+  title = "{A Discussion of '{A}dversarial {E}xamples {A}re {N}ot {B}ugs, {T}hey {A}re {F}eatures': Discussion and Author Responses}",
+  journal = {Distill},
+  year = {2019},
+  note = {Online: \url{https://distill.pub/2019/advex-bugs-discussion/original-authors}. Accessed 2020-01-05},
+  doi = {10.23915/distill.00019.7}
+}
+@article{Ilyas2019,
+abstract = {Adversarial examples have attracted significant attention in machine learning, but the reasons for their existence and pervasiveness remain unclear. We demonstrate that adversarial examples can be directly attributed to the presence of non-robust features: features derived from patterns in the data distribution that are highly predictive, yet brittle and incomprehensible to humans. After capturing these features within a theoretical framework, we establish their widespread existence in standard datasets. Finally, we present a simple setting where we can rigorously tie the phenomena we observe in practice to a misalignment between the (human-specified) notion of robustness and the inherent geometry of the data.},
+archivePrefix = {arXiv},
+arxivId = {1905.02175},
+author = {Ilyas, Andrew and Santurkar, Shibani and Tsipras, Dimitris and Engstrom, Logan and Tran, Brandon and Madry, Aleksander},
+eprint = {1905.02175},
+journal = {arXiv preprint arXiv:1905.02175},
+title = {{Adversarial Examples Are Not Bugs, They Are Features}},
+year = {2019}
+}
+
+@article{Yang2019,
+abstract = {This work provides theoretical and empirical evidence that invariance-inducing regularizers can increase predictive accuracy for worst-case spatial transformations (spatial robustness). Evaluated on these adversarially transformed examples, we demonstrate that adding regularization on top of standard or adversarial training reduces the relative error by 20{\%} for CIFAR10 without increasing the computational cost. This outperforms handcrafted networks that were explicitly designed to be spatial-equivariant. Furthermore, we observe for SVHN, known to have inherent variance in orientation, that robust training also improves standard accuracy on the test set. We prove that this no-trade-off phenomenon holds for adversarial examples from transformation groups in the infinite data limit.},
+archivePrefix = {arXiv},
+arxivId = {1906.11235},
+author = {Yang, Fanny and Wang, Zuowen and Heinze-Deml, Christina},
+eprint = {1906.11235},
+month = {June},
+journal={arXiv preprint arXiv:1906.11235},
+title = {{Invariance-inducing regularization using worst-case transformations suffices to boost accuracy and spatial robustness}},
+url = {http://arxiv.org/abs/1906.11235},
+year = {2019}
+}
+
+
+%%%%%%%%%%% adversarial feature selection %%%%%%%%%%%
+@article{Ghorbani2019,
+abstract = {In order for machine learning to be trusted in many applications, it is critical to be able to reliably explain why the machine learning algorithm makes certain predictions. For this reason, a variety of methods have been developed recently to interpret neural network predictions by providing, for example, feature importance maps. For both scientific robustness and security reasons, it is important to know to what extent can the interpretations be altered by small systematic perturbations to the input data, which might be generated by adversaries or by measurement biases. In this paper, we demonstrate how to generate adversarial perturbations that produce perceptively indistinguishable inputs that are assigned the same predicted label, yet have very different interpretations. We systematically characterize the robustness of interpretations generated by several widely-used feature importance interpretation methods (feature importance maps, integrated gradients, and DeepLIFT) on ImageNet and CIFAR-10. In all cases, our experiments show that systematic perturbations can lead to dramatically different interpretations without changing the label. We extend these results to show that interpretations based on exemplars (e.g. influence functions) are similarly susceptible to adversarial attack. Our analysis of the geometry of the Hessian matrix gives insight on why robustness is a general challenge to current interpretation approaches.},
+archivePrefix = {arXiv},
+arxivId = {1710.10547},
+author = {Ghorbani, Amirata and Abid, Abubakar and Zou, James},
+doi = {10.1609/aaai.v33i01.33013681},
+eprint = {1710.10547},
+issn = {2159-5399},
+journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+month = {jul},
+pages = {3681--3688},
+publisher = {Association for the Advancement of Artificial Intelligence (AAAI)},
+title = "{{Interpretation of Neural Networks Is Fragile}}",
+volume = {33},
+year = {2019}
+}
+
+
+@inproceedings{Szegedy2014,
+abstract = {Deep neural networks are highly expressive models that have recently achieved state of the art performance on speech and visual recognition tasks. While their expressiveness is the reason they succeed, it also causes them to learn uninterpretable solutions that could have counter-intuitive properties. In this paper we report two such properties. First, we find that there is no distinction between individual high level units and random linear combinations of high level units, according to various methods of unit analysis. It suggests that it is the space, rather than the individual units, that contains the semantic information in the high layers of neural networks. Second, we find that deep neural networks learn input-output mappings that are fairly discontinuous to a significant extent. We can cause the network to misclassify an image by applying a certain hardly perceptible perturbation, which is found by maximizing the network's prediction error. In addition, the specific nature of these perturbations is not a random artifact of learning: the same perturbation can cause a different network, that was trained on a different subset of the dataset, to misclassify the same input.},
+archivePrefix = {arXiv},
+arxivId = {1312.6199},
+author = {Szegedy, Christian and Zaremba, Wojciech and Sutskever, Ilya and Bruna, Joan and Erhan, Dumitru and Goodfellow, Ian and Fergus, Rob},
+booktitle = {2nd International Conference on Learning Representations, ICLR 2014 - Conference Track Proceedings},
+eprint = {1312.6199},
+publisher = {International Conference on Learning Representations, ICLR},
+title = {{Intriguing properties of neural networks}},
+year = {2014}
+}
+
+
+
+%%%%%%%%%%% DL project specific end %%%%%%%%%%%
+@book{Boucheron13,
+  title={Concentration inequalities: A nonasymptotic theory of independence},
+  author={Boucheron, St{\'e}phane and Lugosi, G{\'a}bor and Massart, Pascal},
+  year={2013},
+  publisher={Oxford university press}
+}
+
+@article{Bartlett02,
+  title={Rademacher and {G}aussian complexities: {R}isk bounds and structural results},
+  author={Bartlett, Peter L and Mendelson, Shahar},
+  journal={Journal of Machine Learning Research},
+  volume={3},
+  number={Nov},
+  pages={463--482},
+  year={2002}
+}
+
+@incollection{vdV96,
+  title={Weak convergence},
+  author={Van Der Vaart, Aad W and Wellner, Jon A},
+  booktitle={Weak convergence and empirical processes},
+  pages={16--28},
+  year={1996},
+  publisher={Springer}
+}
+%%%%%%%%%%% Simple transformations %%%%%%%%%%%
+% ------ hardcoding ---------
+@inproceedings{Cohen16,
+  title={Group equivariant convolutional networks},
+  author={Cohen, Taco and Welling, Max},
+  booktitle=icml,
+  pages={2990--2999},
+  year={2016}
+}
+
+@inproceedings{Cohen18,
+  title={Spherical {CNN}s},
+  author={Cohen, Taco S and Geiger, Mario and K{\"o}hler, Jonas and Welling, Max},
+  booktitle=iclr,
+year={2018}
+}
+
+@inproceedings{Worrall17,
+  title={Harmonic networks: Deep translation and rotation equivariance},
+  author={Worrall, Daniel E and Garbin, Stephan J and Turmukhambetov, Daniyar and Brostow, Gabriel J},
+  booktitle=cvpr,
+  pages={5028--5037},
+  year={2017}
+}
+
+@inproceedings{Marcos17,
+  title="{Rotation Equivariant Vector Field Networks}",
+  author={Marcos, Diego and Volpi, Michele and Komodakis, Nikos and Tuia, Devis},
+  booktitle=iccv,
+  pages={5058--5067},
+  year={2017}
+}
+
+@inproceedings{Esteves18,
+  title="{Polar Transformer Networks}",
+  author={Esteves, Carlos and Allen-Blanchette, Christine and Zhou, Xiaowei and Daniilidis, Kostas},
+    booktitle=iclr,
+year=2018
+}
+
+@inproceedings{Jaderberg15,
+  title={{S}patial {T}ransformer {N}etworks},
+  author={Jaderberg, Max and Simonyan, Karen and Zisserman, Andrew and others},
+  booktitle=neurips,
+  pages={2017--2025},
+  year={2015}
+}
+
+@inproceedings{Pollefeys16,
+  title={{TI-POOLING}: Transformation-invariant pooling for feature learning in convolutional neural networks},
+  author={Laptev, Dmitry and Savinov, Nikolay and Buhmann, Joachim M and Pollefeys, Marc},
+  booktitle=cvpr,
+  pages={289--297},
+  year=2016
+}
+
+@inproceedings{Zhou17,
+  title={Oriented response networks},
+  author={Zhou, Yanzhao and Ye, Qixiang and Qiu, Qiang and Jiao, Jianbin},
+  booktitle=cvpr,
+  pages={519--528},
+  year={2017}
+}
+
+@inproceedings{Weiler18,
+  title={Learning steerable filters for rotation equivariant {CNNs}},
+  author={Weiler, Maurice and Hamprecht, Fred A and Storath, Martin},
+  booktitle=cvpr,
+  year=2018
+}
+
+@inproceedings{Tai19,
+  title={{E}quivariant {T}ransformer {N}etworks},
+  author={Tai, Kai Sheng and Bailis, Peter and Valiant, Gregory},
+  booktitle=icml,
+  year=2019
+}
+
+@inproceedings{Fischer15,
+  title={Image orientation estimation with convolutional networks},
+  author={Fischer, Philipp and Dosovitskiy, Alexey and Brox, Thomas},
+  booktitle={German Conference on Pattern Recognition},
+  pages={368--378},
+  year={2015},
+  organization={Springer}
+}
+
+% ------ based on augmentation --------
+
+@inproceedings{Cheng16,
+  title="{RIFD-CNN: Rotation-invariant and {F}isher discriminative convolutional neural networks for object detection}",
+  author={Cheng, Gong and Zhou, Peicheng and Han, Junwei},
+  booktitle=cvpr,
+  pages={2884--2893},
+  year=2016
+}
+
+@article{Cheng19,
+  title={Learning rotation-invariant and {F}isher discriminative convolutional neural networks for object detection},
+  author={Cheng, Gong and Han, Junwei and Zhou, Peicheng and Xu, Dong},
+  journal={IEEE Transactions on Image Processing},
+  volume=28,
+  number=1,
+  pages={265--278},
+  year=2019,
+  publisher={IEEE}
+}
+
+@inproceedings{Engstrom17,
+  title="{Exploring the Landscape of Spatial Robustness}",
+  author={Engstrom, Logan and Tran, Brandon and Tsipras, Dimitris and Schmidt, Ludwig and Madry, Aleksander},
+  booktitle=icml,
+  year={2019}
+}
+
+@inproceedings{Kanbak18,
+  title={Geometric robustness of deep networks: analysis and improvement},
+  author={Kanbak, Can and Moosavi-Dezfooli, Seyed-Mohsen and Frossard, Pascal},
+  booktitle=cvpr,
+  pages={4441--4449},
+  year={2018}
+}
+
+@article{Dumont18,
+  title={Robustness of rotation-equivariant networks to adversarial perturbations},
+  author={Dumont, Beranger and Maggio, Simona and Montalvo, Pablo},
+  journal={arXiv preprint arXiv:1802.06627},
+  year={2018}
+}
+
+% ------ other "simple" transformations/deformations -------
+
+@inproceedings{Xiao18,
+title="{Spatially Transformed Adversarial Examples}",
+author={Chaowei Xiao and Jun-Yan Zhu and Bo Li and Warren He and Mingyan Liu and Dawn Song},
+booktitle=iclr,
+year={2018}
+}
+
+@inproceedings{Alaifari18,
+  title="{ADef: an Iterative Algorithm to Construct Adversarial Deformations}",
+  author={Alaifari, Rima and Alberti, Giovanni S and Gauksson, Tandri},
+  booktitle=iclr,
+  year={2019},
+}
+
+%%%%%%%%%%% analysis of CNNs re simple trafos %%%%%%%%%%
+
+
+@inproceedings{Larochelle07,
+  title={An empirical evaluation of deep architectures on problems with many factors of variation},
+  author={Larochelle, Hugo and Erhan, Dumitru and Courville, Aaron and Bergstra, James and Bengio, Yoshua},
+  booktitle={Proceedings of the 24th International Conference on Machine Learning},
+  pages={473--480},
+  year={2007},
+  OPTorganization={ACM}
+}
+
+@inproceedings{Fawzi15,
+  title="{Manitest: Are classifiers really invariant?}",
+  author={Fawzi, A. and Frossard, P.},
+  booktitle={British Machine Vision Conference (BMVC)},
+  year={2015},
+}
+
+
+@article{Pei17,
+  title={Towards practical verification of machine learning: The case of computer vision systems},
+  author={Pei, Kexin and Cao, Yinzhi and Yang, Junfeng and Jana, Suman},
+  journal={arXiv preprint arXiv:1712.01785},
+  year={2017}
+}
+
+@inproceedings{Geirhos18,
+  title={Generalisation in humans and deep neural networks},
+  author={Geirhos, Robert and Temme, Carlos RM and Rauber, Jonas and Sch{\"u}tt, Heiko H and Bethge, Matthias and Wichmann, Felix A},
+  booktitle=neurips,
+  pages={7549--7561},
+  year={2018}
+}
+
+@article{Alcorn18,
+  title={Strike (with) a Pose: Neural Networks Are Easily Fooled by Strange Poses of Familiar Objects},
+  author={Alcorn, Michael A and Li, Qi and Gong, Zhitao and Wang, Chengfei and Mai, Long and Ku, Wei-Shinn and Nguyen, Anh},
+  journal={arXiv preprint arXiv:1811.11553},
+  year={2018}
+}
+
+
+%%%%%%%%%%% Data augmentation %%%%%%%%%
+
+@inproceedings{Yaeger97,
+title = "{Effective Training of a Neural Network Character Classifier for Word Recognition}",
+author = { Yaeger, Larry S. and Lyon, Richard F. and Webb, Brandyn J.},
+booktitle = neurips,
+OPTeditor = {M. C. Mozer and M. I. Jordan and T. Petsche},
+pages = {807--816},
+year = {1997},
+}
+
+
+@incollection{Baird92,
+  title={Document image defect models},
+  author={Baird, Henry S},
+  booktitle={Structured Document Image Analysis},
+  pages={546--556},
+  year={1992},
+  publisher={Springer}
+}
+
+@inproceedings{Simard03,
+  title={Best practices for convolutional neural networks applied to visual document analysis},
+  author={Simard, Patrice Y and Steinkraus, Dave and Platt, John C},
+  booktitle={Proceedings of the International Conference on Document Analysis and Recognition},
+  pages={958},
+  year={2003},
+  organization={IEEE}
+}
+
+@inproceedings{Krizhevsky12,
+  title={Imagenet classification with deep convolutional neural networks},
+  author={Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  booktitle=neurips,
+  pages={1097--1105},
+  year={2012}
+}
+
+@inproceedings{Ratner17,
+  title={Learning to compose domain-specific transformations for data augmentation},
+  author={Ratner, Alexander J and Ehrenberg, Henry and Hussain, Zeshan and Dunnmon, Jared and R{\'e}, Christopher},
+  booktitle=neurips,
+  pages={3236--3246},
+  year={2017}
+}
+
+@article{Devries17,
+  title={Dataset augmentation in feature space},
+  author={DeVries, Terrance and Taylor, Graham W},
+  journal={arXiv preprint arXiv:1702.05538},
+  year={2017}
+}
+
+@article{Cubuk18,
+  title="{AutoAugment: Learning Augmentation Policies from Data}",
+  author={Cubuk, Ekin D and Zoph, Barret and Mane, Dandelion and Vasudevan, Vijay and Le, Quoc V},
+  journal={arXiv preprint arXiv:1805.09501},
+  year={2018}
+}
+
+@inproceedings{Antoniou18,
+title="{Data Augmentation Generative Adversarial Networks}",
+author={Anthreas Antoniou and Amos Storkey and Harrison Edwards},
+booktitle={Workshop submission for International Conference for Learning Representations},
+year={2018}
+}
+
+@inproceedings{Tran17,
+title = {A Bayesian Data Augmentation Approach for Learning Deep Models},
+author = {Tran, Toan and Pham, Trung and Carneiro, Gustavo and Palmer, Lyle and Reid, Ian},
+booktitle = neurips,
+pages = {2797--2806},
+year = {2017}
+}
+
+
+@article{Xie19,
+    title="{Unsupervised Data Augmentation}",
+    author={Qizhe Xie and Zihang Dai and Eduard Hovy and Minh-Thang Luong and Quoc V. Le},
+    year=2019,
+    journal={arXiv preprint arXiv:1904.12848},
+    primaryClass={cs.LG}
+}
+
+@inproceedings{Zheng16,
+  title={Improving the robustness of deep neural networks via stability training},
+  author={Zheng, Stephan and Song, Yang and Leung, Thomas and Goodfellow, Ian},
+  booktitle=cvpr,
+  pages={4480--4488},
+  year={2016}
+}
+%%%%%%%%%%% Linf Adversarial literature %%%%%%%%%%%
+
+% -------- Certificates ---------
+
+@inproceedings{Mirman18,
+  title={Differentiable abstract interpretation for provably robust neural networks},
+  author={Mirman, Matthew and Gehr, Timon and Vechev, Martin},
+  booktitle=icml,
+  pages={3575--3583},
+  year=2018
+}
+
+@inproceedings{Wong18,
+  title={Provable defenses against adversarial examples via the convex outer adversarial polytope},
+  author={Wong, Eric and Kolter, Zico},
+  booktitle={International Conference on Machine Learning},
+  pages={5283--5292},
+  year={2018}
+}
+
+@inproceedings{Ragunathan18,
+title="{Certified Defenses against Adversarial Examples}",
+author={Aditi Raghunathan and Jacob Steinhardt and Percy Liang},
+booktitle=iclr,
+year={2018}
+}
+
+@inproceedings{Sinha18,
+title="{Certifiable Distributional Robustness with Principled Adversarial Training}",
+author={Aman Sinha and Hongseok Namkoong and John Duchi},
+booktitle=iclr,
+year={2018}
+}
+
+@article{Gilmer18,
+  title={Motivating the rules of the game for adversarial example research},
+  author={Gilmer, Justin and Adams, Ryan P and Goodfellow, Ian and Andersen, David and Dahl, George E},
+  journal={arXiv preprint arXiv:1807.06732},
+  year={2018}
+}
+
+% -------- F.O. Attacks --------
+@inproceedings{Biggio2013,
+abstract = {In security-sensitive applications, the success of machine learning depends on a thorough vetting of their resistance to adversarial data. In one pertinent, well-motivated attack scenario, an adversary may attempt to evade a deployed system at test time by carefully manipulating attack samples. In this work, we present a simple but effective gradient-based approach that can be exploited to systematically assess the security of several, widely-used classification algorithms against evasion attacks. Following a recently proposed framework for security evaluation, we simulate attack scenarios that exhibit different risk levels for the classifier by increasing the attacker's knowledge of the system and her ability to manipulate attack samples. This gives the classifier designer a better picture of the classifier performance under evasion attacks, and allows him to perform a more informed model selection (or parameter setting). We evaluate our approach on the relevant security task of malware detection in PDF files, and show that such systems can be easily evaded. We also sketch some countermeasures suggested by our analysis. {\textcopyright} 2013 Springer-Verlag.},
+archivePrefix = {arXiv},
+arxivId = {1708.06131},
+author = {Biggio, Battista and Corona, Igino and Maiorca, Davide and Nelson, Blaine and {\v{S}}rndi{\'{c}}, Nedim and Laskov, Pavel and Giacinto, Giorgio and Roli, Fabio},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-642-40994-3_25},
+eprint = {1708.06131},
+file = {::},
+isbn = {9783642409936},
+issn = {03029743},
+keywords = {adversarial machine learning,evasion attacks,neural networks,support vector machines},
+number = {PART 3},
+pages = {387--402},
+title = {{Evasion attacks against machine learning at test time}},
+volume = {8190 LNAI},
+year = {2013}
+}
+
+@inproceedings{Szegedy13,
+  title={Intriguing properties of neural networks},
+  author={Szegedy, Christian and Zaremba, Wojciech and Sutskever, Ilya and Bruna, Joan and Erhan, Dumitru and Goodfellow, Ian and Fergus, Rob},
+  booktitle=iclr,
+  year={2014}
+}
+@article{Goodfellow14,
+  title={Explaining and harnessing adversarial examples},
+  author={Goodfellow, Ian J and Shlens, Jonathon and Szegedy, Christian},
+  journal={arXiv preprint arXiv:1412.6572},
+  year={2014}
+}
+
+@article{Kurakin16b,
+  title={Adversarial machine learning at scale},
+  author={Kurakin, Alexey and Goodfellow, Ian and Bengio, Samy},
+  journal={arXiv preprint arXiv:1611.01236},
+  year={2016}
+}
+@inproceedings{Moosavi16,
+  title={Deepfool: {A} simple and accurate method to fool deep neural networks},
+  author={Moosavi-Dezfooli, Seyed-Mohsen and Fawzi, Alhussein and Frossard, Pascal},
+  booktitle=cvpr,
+  pages={2574--2582},
+  year={2016}
+}
+@article{Kurakin16,
+  title={Adversarial examples in the physical world},
+  author={Kurakin, Alexey and Goodfellow, Ian and Bengio, Samy},
+  journal={arXiv preprint arXiv:1607.02533},
+  year={2016}
+}
+
+@inproceedings{Papernot17,
+  title={Practical black-box attacks against machine learning},
+  author={Papernot, Nicolas and McDaniel, Patrick and Goodfellow, Ian and Jha, Somesh and Celik, Z Berkay and Swami, Ananthram},
+  booktitle={Proceedings of the ACM Asia Conference on Computer and Communications Security},
+  pages={506--519},
+  year=2017,
+  organization={ACM}
+}
+@inproceedings{Carlini17,
+  title={Towards evaluating the robustness of neural networks},
+  author={Carlini, Nicholas and Wagner, David},
+  booktitle={Proceedings of the IEEE Symposium on Security and Privacy (SP)},
+  pages={39--57},
+  year={2017},
+  organization={IEEE}
+}
+
+@inproceedings{Madry18,
+title="{Towards Deep Learning Models Resistant to Adversarial Attacks}",
+author={Aleksander Madry and Aleksandar Makelov and Ludwig Schmidt and Dimitris Tsipras and Adrian Vladu},
+booktitle=iclr,
+year={2018},
+}
+
+@inproceedings{Tsipras18,
+  title="{Robustness May Be at Odds with Accuracy}",
+  author={Tsipras, Dimitris and Santurkar, Shibani and Engstrom, Logan and Turner, Alexander and Madry, Aleksander},
+  booktitle=iclr,
+  year={2019}
+}
+
+
+% ------- Other defenses --------
+@inproceedings{Samangouei18,
+title="{Defense-{GAN}: Protecting Classifiers Against Adversarial Attacks Using Generative Models}",
+author={Pouya Samangouei and Maya Kabkab and Rama Chellappa},
+booktitle=iclr,
+year={2018},
+}
+
+@article{Akhtar18,
+  title="{Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey}",
+  author={Akhtar, Naveed and Mian, Ajmal},
+  journal={IEEE Access},
+  volume={6},
+  pages={14410--14430},
+  year={2018},
+  publisher={IEEE}
+}
+
+% --------- Non NN ---------
+@article{Papernot16,
+  title={Transferability in machine learning: from phenomena to black-box attacks using adversarial samples},
+  author={Papernot, Nicolas and McDaniel, Patrick and Goodfellow, Ian},
+  journal={arXiv preprint arXiv:1605.07277},
+  year={2016}
+}
+
+% -------- Core/ALP -----------
+
+@inproceedings{Zhang19, 
+	author = {Hongyang Zhang and Yaodong Yu and Jiantao Jiao and Eric P. Xing and Laurent El Ghaoui and Michael I. Jordan}, 
+	title = "{Theoretically Principled Trade-off between Robustness and Accuracy}", 
+	booktitle = icml,
+	year = {2019}
+}
+
+@article{Heinze17,
+  title="{Conditional Variance Penalties and Domain Shift Robustness}",
+  author={Heinze-Deml, Christina and Meinshausen, Nicolai},
+  journal={arXiv preprint arXiv:1710.11469},
+  year={2017}
+}
+
+@article{Kannan18,
+  title={Adversarial {L}ogit {P}airing},
+  author={Kannan, Harini and Kurakin, Alexey and Goodfellow, Ian},
+  journal={arXiv preprint arXiv:1803.06373},
+  year={2018}
+}
+
+@article{Engstrom18,
+  title={Evaluating and understanding the robustness of adversarial logit pairing},
+  author={Engstrom, Logan and Ilyas, Andrew and Athalye, Anish},
+  journal={arXiv preprint arXiv:1807.10272},
+  year={2018}
+}
+
+@article{Mosbach18,
+  title="{Logit Pairing Methods Can Fool Gradient-Based Attacks}",
+  author={Mosbach, Marius and Andriushchenko, Maksym and Trost, Thomas and Hein, Matthias and Klakow, Dietrich},
+  journal={arXiv preprint arXiv:1810.12042},
+  year={2018}
+}
+
+@inproceedings{Na18,
+title="{Cascade Adversarial Machine Learning Regularized with a Unified Embedding}",
+author={Taesik Na and Jong Hwan Ko and Saibal Mukhopadhyay},
+booktitle=iclr,
+year={2018},
+}
+
+%%%%%%%%%%%%%% Domain adaptation/generalization related %%%%%%%%%
+
+@inproceedings{Motiian17,
+  title={Unified deep supervised domain adaptation and generalization},
+  author={Motiian, Saeid and Piccirilli, Marco and Adjeroh, Donald A and Doretto, Gianfranco},
+  booktitle=iccv,
+  volume={2},
+  pages={3},
+  year={2017}
+}
+
+%%%%%%%%%%%%%% Causality and ML %%%%%%%%%%%%
+@inproceedings{Schoelkopf12,
+  title={On causal and anticausal learning},
+  author={Sch{\"o}lkopf, Bernhard and Janzing, Dominik and Peters, Jonas and Sgouritsa, Eleni and Zhang, Kun and Mooij, Joris},
+  booktitle=icml,
+  pages={459--466},
+  year={2012}
+}
+
+%%%%%%%%%%%% Optimization related %%%%%%%%%%%%%%%%%
+@article{Chen17,
+  title={Accelerated schemes for a class of variational inequalities},
+  author={Chen, Yunmei and Lan, Guanghui and Ouyang, Yuyuan},
+  journal={Mathematical Programming},
+  volume={165},
+  number={1},
+  pages={113--149},
+  year={2017},
+  publisher={Springer}
+}
+
+%%%%%%%%%%%%%%% Deep Learning 1x1 %%%%%%%%%%%%%%%
+
+% -------- Architectures --------
+@inproceedings{Simonyan15,
+  author={Simonyan, K. and Zisserman, A.},
+  title={Very Deep Convolutional Networks for Large-Scale Image Recognition},
+  booktitle=iclr,
+  year={2015}
+}
+
+@inproceedings{He16,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle=cvpr,
+  pages={770--778},
+  year=2016
+}
+
+@inproceedings{Netzer11,
+  title={Reading digits in natural images with unsupervised feature learning},
+  author={Netzer, Y. and Wang, Tao and Coates, Adam and Bissacco, Alessandro and Wu, Bo and Ng, Andrew Y},
+  booktitle={NIPS workshop on Deep Learning and Unsupervised Feature Learning},
+  pages=5,
+  year=2011
+}
+
+@article{Gastaldi2017,
+  author    = {Xavier Gastaldi},
+  title     = {Shake-Shake regularization},
+  journal   = {arXiv preprint arXiv:1705.07485},
+  year      = {2017},
+}
+
+@article{Zagoruyko2016,
+  author    = {Sergey Zagoruyko and
+               Nikos Komodakis},
+  title     = {Wide Residual Networks},
+  journal   = {arXiv preprint arXiv:1605.07146},
+  year      = {2016},
+}
+
+% -------- Dataset ---------
+@techreport{Netzer,
+abstract = {Detecting and reading text from natural images is a hard computer vision task that is central to a variety of emerging applications. Related problems like document character recognition have been widely studied by computer vision and machine learning researchers and are virtually solved for practical applications like reading handwritten digits. Reliably recognizing characters in more complex scenes like photographs, however, is far more difficult: the best existing methods lag well behind human performance on the same tasks. In this paper we attack the problem of recognizing digits in a real application using unsupervised feature learning methods: reading house numbers from street level photos. To this end, we introduce a new benchmark dataset for research use containing over 600,000 labeled digits cropped from Street View images. We then demonstrate the difficulty of recognizing these digits when the problem is approached with hand-designed features. Finally, we employ variants of two recently proposed unsupervised feature learning methods and find that they are convincingly superior on our benchmarks.},
+author = {Netzer, Yuval and Wang, Tao and Coates, Adam and Bissacco, Alessandro and Wu, Bo and Ng, Andrew Y},
+title = "{{Reading Digits in Natural Images with Unsupervised Feature Learning}}",
+url = {http://ufldl.stanford.edu/housenumbers/}
+}
+
+@article{recht2018cifar10.1,
+  author = {Benjamin Recht and Rebecca Roelofs and Ludwig Schmidt and Vaishaal Shankar},
+  title = {Do CIFAR-10 Classifiers Generalize to CIFAR-10?},
+  year = {2018},
+  note = {\url{https://arxiv.org/abs/1806.00451}},
+}
+
+@article{torralba2008tinyimages, 
+  author = {Antonio Torralba and Rob Fergus and William T. Freeman}, 
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title = {80 Million Tiny Images: A Large Data Set for Nonparametric Object and Scene Recognition}, 
+  year = {2008}, 
+  volume = {30}, 
+  number = {11}, 
+  pages = {1958-1970}
+}
+@techreport{Krizhevsky09,
+  title={Learning multiple layers of features from tiny images},
+  author={Krizhevsky, Alex and Hinton, Geoffrey},
+  year={2009},
+  institution={University of Toronto},
+  volume={1},
+  number={4}
+}
+
+@article{Danskin66,
+  title={The theory of max-min, with applications},
+  author={Danskin, John M},
+  journal={SIAM Journal on Applied Mathematics},
+  volume={14},
+  number={4},
+  pages={641--664},
+  year={1966},
+  publisher={SIAM}
+}
+
+% -------- Frameworks --------
+@Misc{Abadi2015,
+  author = {M.~Abadi and A.~Agarwal and P.~Barham and E.~Brevdo and others},
+  title  = "{{TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems}",
+  year   = {2015},
+  note   = {Software available from tensorflow.org},
+  url    = {https://www.tensorflow.org/},
+}
+
+@incollection{Paszke19,
+  title = "{PyTorch: An Imperative Style, High-Performance Deep Learning Library}",
+  author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+  booktitle = {Advances in Neural Information Processing Systems 32},
+  editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d'\'{e}-Buc and E. Fox and R. Garnett},
+  pages = {8024--8035},
+  year = {2019},
+  publisher = {Curran Associates, Inc.},
+  url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
+}
+
+% -------- Optimization --------
+@article{Plaut1986,
+  title={Experiments on learning by back propagation},
+  author={Plaut, D. and Nowlan, S. and Hinton, G. E.},
+  journal={Technical Report CMU-CS-86-126, Department of Computer Science, Carnegie Mellon University},
+  year={1986}
+}
+
+
+@book{BenTal09,
+  title={Robust optimization},
+  author={Ben-Tal, Aharon and El Ghaoui, Laurent and Nemirovski, Arkadi},
+  volume={28},
+  year={2009},
+  publisher={Princeton University Press}
+}
+
+@article{Hanin17,
+  title={Universal function approximation by deep neural nets with bounded width and relu activations},
+  author={Hanin, Boris},
+  journal={arXiv preprint arXiv:1708.02691},
+  year={2017}
+}
+
+@article{Barron93,
+  title={Universal approximation bounds for superpositions of a sigmoidal function},
+  author={Barron, Andrew R},
+  journal=it,
+  volume={39},
+  number={3},
+  pages={930--945},
+  year={1993},
+  publisher={IEEE}
+}
+
+@article{Hornik89,
+  title={Multilayer feedforward networks are universal approximators},
+  author={Hornik, Kurt and Stinchcombe, Maxwell and White, Halbert},
+  journal={Neural networks},
+  volume={2},
+  number={5},
+  pages={359--366},
+  year={1989},
+  publisher={Elsevier}
+}
+
+@article{Grohs19,
+  title={Deep neural network approximation theory},
+  author={Grohs, Philipp and Perekrestenko, Dmytro and Elbr{\"a}chter, Dennis and B{\"o}lcskei, Helmut},
+  journal={arXiv preprint arXiv:1901.02220},
+  year={2019}
+}
+
+
+@inproceedings{Zhang16,
+  title={Understanding deep learning requires rethinking generalization},
+  author={Zhang, Chiyuan and Bengio, Samy and Hardt, Moritz and Recht, Benjamin and Vinyals, Oriol},
+  booktitle=iclr,
+  year={2015}
+}
+
+@article{RXYDL19,
+    title="{Adversarial Training Can Hurt Generalization}",
+    author={Aditi Raghunathan and Sang Michael Xie and Fanny Yang and John C. Duchi and Percy Liang},
+    year={2019},
+    journal={arXiv preprint arXiv:1906.06032}
+}f
